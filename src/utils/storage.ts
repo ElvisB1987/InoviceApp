@@ -20,6 +20,7 @@ export function deleteInvoice(id: string): void {
   localStorage.setItem('invoices', JSON.stringify(invoices))
 }
 
+
 export function addInvoice(data: Object): void {
   const invoices = getInvoices()
   invoices.push(data)
